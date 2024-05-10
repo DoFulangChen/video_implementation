@@ -8,30 +8,6 @@
 
 int main(int argc, char* argv[])
 {
-	//printf("%d\n", argc);
-	////bool encode = 0;
-	//char* mode = NULL;
-	//char* in_file = NULL;
-	//char* out_file = NULL;
-	//for (int i = 0; i < argc; ++i) {
-	//	printf("i:%d, argv:%s\n", i, argv[i]);
-
-	//	if (argv[i] == "--mode") {
-	//		printf("%s\n", argv[i + 1]);
-	//		mode = argv[i + 1];
-	//	}
-	//	/*else if (argv[i] == "--in_file") {
-	//		in_file = argv[i + 1];
-	//	}
-	//	 else if (argv[i] == "--out_file") {
-	//		out_file = argv[i + 1];
-	//	}
-	//	 else
-	//	{
-	//		break;
-	//	}*/
-	//}
-
 	// printf("%s\n", mode);
 	/*const char* mode = "encode";*/
 	const char* mode = "stream";
