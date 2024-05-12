@@ -71,8 +71,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\jnche\Desktop\jianing\video_implementation\workspace\ffmpeg-7.0;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\jnche\Desktop\jianing\video_implementation\workspace\ffmpeg-7.0-install\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\jnche\Desktop\jianing\video_implementation\video_implementation\video_implementation\include;C:\Users\jnche\Desktop\jianing\video_implementation\workspace\ffmpeg-7.0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\jnche\Desktop\jianing\video_implementation\video_implementation\video_implementation\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>C:\Users\jnche\Desktop\jianing\video_implementation\workspace\ffmpeg-7.0-install\include;C:\Users\jnche\Desktop\jianing\video_implementation\workspace\SDL2-devel-2.30.3-mingw\SDL2-2.30.3\x86_64-w64-mingw32\include\SDL2;$(ReferencePath)</ReferencePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -108,6 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\jnche\Desktop\jianing\video_implementation\workspace\SDL2-devel-2.30.3-VC\SDL2-2.30.3\include;C:\Users\jnche\Desktop\jianing\video_implementation\workspace\ffmpeg-7.0-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,6 +134,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="include\sdl2.cpp" />
     <ClCompile Include="include\muxer.cpp" />
     <ClCompile Include="include\streamer.cpp" />
     <ClCompile Include="include\video_decode.cpp" />
@@ -140,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\muxer.h" />
+    <ClInclude Include="include\sdl2.h" />
     <ClInclude Include="include\streamer.h" />
     <ClInclude Include="include\video_decode.h" />
     <ClInclude Include="include\video_encode.h" />

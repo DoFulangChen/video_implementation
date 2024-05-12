@@ -2,6 +2,7 @@
 #include "./include/video_encode.h"
 #include "./include/muxer.h"
 #include "./include/streamer.h"
+#include "./include/sdl2.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -26,6 +27,9 @@ int main(int argc, char* argv[])
 	}
 	else if (mode == "stream") {
 		streamer();
+	}
+	else if (mode == "sdl2") {
+		sdl2();
 	}
 	else {
 		exit(1);

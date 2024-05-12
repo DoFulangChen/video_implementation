@@ -30,6 +30,9 @@
     <ClCompile Include="include\streamer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="include\sdl2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\video_encode.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\streamer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sdl2.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
